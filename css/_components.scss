@@ -1,0 +1,467 @@
+
+.sidebarleft{
+    background-color: $colorDark;
+    width: 100%;
+    height: 78vh;
+    grid-column: 1/2;
+    border-radius: .5rem;
+    overflow-y: auto;
+    @include breakpoint{
+        width: 9rem
+    }
+
+    //SECTION - ARTICLES
+    &__section{
+        @include flex-box(space-between, center);
+        flex-wrap: wrap;
+        gap: 2.2rem;
+        position: sticky;
+        z-index: 10;
+        top: 0;
+        background-color: $colorDark;
+        padding: 2rem;
+    }
+
+    &__art,&__art-2{
+        flex: 1 1 48%;
+        @include flex-box (start,center); 
+        }
+    &__art-3{
+        flex: 1 1 100%;
+        @include flex-box (start,center);
+        gap: 1rem;
+
+        @include breakpoint{
+            display: none
+        }
+
+        }
+    &__art{
+        justify-content: flex-start;
+        flex: 1;
+    }
+    &__art-2{
+        justify-content: flex-end;
+        gap: 1rem;
+
+        @include breakpoint{
+            display: none
+        }
+    }
+    //ICONS - LINKS
+    &__icon-link{
+        @include link;
+        font-size: clamp(1rem,5vw,1.5rem);
+        font-weight: 700;
+
+        @include breakpoint{
+            display: none;
+        }
+    }
+
+    &__icon-box{
+        width: 2rem 2rem;
+        @include flex-box(center,center);
+        flex-direction: row;
+        gap: 1rem;
+        width: 14rem;
+        opacity: .5;
+        transition: .5s;
+        cursor: pointer;
+
+        @include breakpoint{
+            justify-content: start;
+        }
+
+        &:hover{
+            opacity: 1;
+            transition: .5s;
+        }
+    }
+    &__icon-box-img{
+        width: 2.5rem;
+    }
+    &__icons{
+        cursor: pointer;
+        opacity: .6;
+
+        &:hover{
+            opacity: 1;
+            background-color: $colorBgButtons;
+            border-radius: 50%;
+        }
+    }
+
+    &__art-3-link{
+        @include link;
+        @include fontSizeLink;
+        font-weight: 400;
+        background-color: $colorBgButtons;
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        border-radius: 1.5rem;
+        transition: .5s;
+        &:hover{
+            background-color: #6d6b6b;
+            transition: .5s;
+        }
+    }
+
+    //LIBRARY
+    &__library{
+        padding: .5rem;
+    }
+    &__container-search{
+        padding: 2rem;
+        @include flex-box(space-between,center);
+
+        @include breakpoint{
+            display: none
+        }
+    }
+    //ICONS
+    &__container-search-icon{
+        width: 1.8rem;
+        cursor: pointer;
+    }
+    &__container-search-icon-box-link-1{
+        @include flex-box(center,center);
+        padding: .2rem;
+    &:hover{
+        background-color: $colorBgButtons;
+        border-radius: 50%
+    }
+    }
+    &__container-search-icon-box{
+        @include flex-box(center,center);
+        gap: .5rem;
+        transition: .5s;
+        opacity: .7;
+        flex-direction: row-reverse;
+        &:hover{
+            transform: scale(1.1);
+            transition: .5s;
+            opacity: 1;
+        }
+    }
+    &__container-search-icon-box-link{
+        @include link;
+        @include fontSizeLink;
+    }
+    //ALBUMS
+    &__albumns{
+        padding: 1rem;
+        @include flex-box(start,center);
+        gap: 1rem;
+        padding-left: 2rem;
+        cursor: pointer;
+        &:hover{
+            background-color: $colorBgButtons;
+            background-blend-mode: overlay;
+            border-radius: 1rem;
+        }
+        @include breakpoint{
+            padding-left: 1rem;
+        }
+    }
+    //TEXT
+    &__box-text{
+        @include flex-box(start,start);
+        flex-direction: column;
+        gap: 1rem;
+
+        @include breakpoint{
+            display: none
+        }
+    }
+    &__box-text-title{
+        font-size: 500;
+    }
+    &__box-text-subtitle{
+        font-size: 1.3rem;
+        color: $colorGreyC;
+    }
+    &__img-container{
+        height: 5rem;
+        width: 5rem;
+        @include flex-box(center,center);
+        position: relative;
+        overflow: hidden;
+    }
+    // IMG ALBUMS
+    &__albumns-1{
+        @include albums(url(../img/SABRINA-CARPENTER.JPG));
+        @include avatar(5rem);
+    }
+    &__albumns-2{
+        @include albums(url(../img/WOS.JPG));
+        @include avatar(5rem);
+    }
+    &__albumns-3{
+        @include albums(url(../img/NEW-JEANS.JPG));
+    }
+    &__albumns-4{
+        @include albums(url(../img/LOUTA.JPG));
+    }
+    &__albumns-5{
+        @include albums (url(../img/Me-Gusta.JPG));
+    }
+    &__albumns-6{
+        @include albums (url(../img/DILLOM.JPG));
+    }
+    &__albumns-7{
+        @include albums (url(../img/KEVIN-KAARL.JPG));
+    }
+    &__albumns-8{
+        @include albums (url(../img/NSKQ.JPG));
+    }
+    &__albumns-9{
+        @include albums (url(../img/Descartable.JPG));
+    }
+    &__albumns-10{
+        @include albums (url(../img/Tres-puntos.JPG));
+    }
+    &__albumns-11{
+        @include albums (url(../img/NewJeans-1st.JPG));
+    }
+    &__albumns:hover &__img-container{
+        background-blend-mode: overlay;
+        background-color: #444343;
+    }
+    &__albumns:hover &__boxIcon{
+        opacity: 1;
+    }
+    //ICONS{
+    &__boxIcon{
+        position: absolute;
+        opacity: 0;
+    }
+}
+
+
+.asideright{
+    background-color: $colorDark;
+    width: 100%;
+    height: 78vh;
+    border-radius: .5rem;
+    grid-column: 4/5;
+    overflow: auto;
+    @include breakpoint{
+        width: 30rem;
+    }
+
+    &__section{
+        @include flex-box(space-between, center);
+        flex-wrap: wrap;
+        gap: 2.2rem;
+        position: sticky;
+        z-index: 10;
+        top: 0;
+        background-color: $colorDark;
+        padding: 2rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+
+    &__art-3{
+        flex: 1 1 100%;
+        @include flex-box (start,center);
+        gap: 1rem;
+        }
+    &__art{
+        justify-content: flex-start;
+        flex: 1;
+    }
+    &__art-link{
+        color: $colorWhite;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.5rem;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__art-2{
+        @include flex-box(center,center);
+        gap: 1.5rem;
+    }
+    //ICONS
+    &__art-2-box-icon{
+        width: 2rem;
+    }
+    &__art-2-box{
+        padding: .5rem;
+        @include flex-box(center,center);
+        cursor: pointer;
+        opacity: .5;
+        &:hover{
+            background-color:$colorBgButtons ;
+            border-radius: 50%;
+            opacity: 1;
+        }
+    }
+    //SONG
+    
+
+    &__song-img{
+        padding: .9rem;
+        @include flex-box(center,center);
+    }
+    &__song-img-borderR{
+        border-radius: 1.5rem;
+        cursor: pointer;
+        height: 30rem;
+        width: 95%
+    }
+    //text
+    &__song-text{
+        @include flex-box(space-between,center);
+        padding: 1rem 2rem 1rem 1.5rem;
+    }
+    &__song-text-boxIcon-img{
+        width: 2rem;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    &__song-text-title{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $colorWhite;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__song-text-artista{
+        @include flex-box(start,center);
+        gap: .5rem;
+        padding: 0rem 2rem 1rem 1.5rem;
+    }
+    &__song-text-artista-link{
+        color: $colorGreyC;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__song-text-artista-coma{
+        color: $colorGreyC;
+    }
+    // ACERCA DE 
+    &__about{
+        padding: 2rem;
+    }
+    &__about-container-img{
+        height: 20rem;
+        background-image: url(../img/acerca\ de.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 1rem 1rem 0rem 0rem;
+        @include flex-box (start,start); 
+        padding: 1.5rem;  
+        cursor: pointer;
+    }
+    &__about-container-img-text{
+        font-weight: 600;
+    }
+    &__about-container-info{
+        background-color: $colorBgButtons;
+        padding: 1rem;
+        @include flex-box(center,center);
+        gap: 7rem;
+        height: 15rem;
+        border-radius: 0rem 0rem 1rem 1rem;
+        cursor: pointer;
+    }
+    &__about-container-info-text{
+        line-height: 1.5;
+    }
+    &__about-container-info-text-name{
+        color:$colorWhite;
+        text-decoration: none;
+        font-weight: 600;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__about-container-img-text-numbers{
+        color: $colorGreyC;
+        font-size: 1.5rem;
+    }
+    &__about-container-img-text-sub{
+        color: $colorGreyC;
+        font-size: 1.3rem;
+    }
+    //BUTTOM
+    &__about-buttom{
+        background-color: transparent;
+        border: 1.5px solid $colorSecundario;
+        border-radius: 1.5rem;
+        cursor: pointer;
+        &:hover{
+            border: 1.5px solid $colorWhite;
+            transform: scale(1.05);
+        }
+    }
+    &__about-buttom-text{
+        color: $colorWhite;
+        padding: .5rem 1.3rem;
+    }
+    &__about-container-info-2{
+        margin-top: 1rem;
+        border-radius: 1rem;
+        @include flex-box(start,start);
+        flex-direction: column;
+    }
+    //CREDITOS
+    &__creditos{
+        padding: 2rem;
+    }
+    &__creditos-info{
+        background-color: $colorBgButtons;
+        padding: 1rem 1.7rem 2rem 1.7rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    &__creditos-info-text{
+        @include flex-box(space-between,center);
+        margin-top: 1.7rem;
+    }
+    &__creditos-info-text-title{
+        font-weight: 600;
+    }
+    &__creditos-info-text-link{
+        color: $colorWhite;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.3rem;
+        &:hover{
+            text-decoration: underline;
+            transform: scale(1.01);
+        }
+    }
+    &__creditos-info-text-links{
+        display: flex;
+        flex-direction: column;
+        line-height: .9;
+    }
+    &__creditos-info-text-links-a{
+        color: $colorWhite;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__creditos-info-text-links-p{
+        font-size: 1.3rem;
+    }
+    &__creditos-info-text-links-p-2{
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
