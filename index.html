@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg" href="img/icons/spotify-favicon.svg">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <section class="container-sections">
+
+        <header class="header">
+            <article class="header__article">
+                <a href="index.html"><img class="header__article-logo" src="img/icons/spotify-white.svg" alt="icono-spotify"></a> 
+            </article>
+
+            <article class="header__article">
+                <i class="header__article-icon-box"><img class="header__article-icon" src="img/icons/home.svg" alt="icon-home"></i>
+                <div class="header__search">
+                    <i><img class="header__search-icons" src="img/icons/search.svg" alt="icon-search"></i> 
+                    <input class="header__search-input" type="text" placeholder="¿Qué quieres reproducir?" />
+                    <span class="header__search-divisor"></span>
+                    <i><img class="header__search-icons" src="img/icons/archive.svg" alt="icon-explorar"></i>
+                </div>    
+                <a class="header__link" href="index.html">Explorar premium</a>
+                <i class="header__link-download"><img class="header__article-icon-download" src="img/icons/arrow-down-circle (1).svg" alt="icon-download"><a class="header__link-secundario" href="index.html">Instalar aplicación</a></i>
+                <i><img class="header__article-icon-small" src="img/icons/bell.svg" alt="icon-bell"></i>
+                <div class="header__avatar">
+                    <img class="header__avatar-img" src="img/avatar.JPG" alt="avatar">
+                </div>
+            </article>
+        </header>
+        
+        <aside class="sidebarleft">
+            <section class="sidebarleft__section">
+                <article class="sidebarleft__art">
+                    <i class="sidebarleft__icon-box"><img class="sidebarleft__icon-box-img sidebarleft__icon-library" src="img/icons/libreria.svg" alt="icon-library"> <a class="sidebarleft__icon-link" href="#">Tu biblioteca</a></i>
+                </article>
+                <article class="sidebarleft__art-2">
+                    <i><img class="sidebarleft__icons" src="img/icons/Plus.svg" alt="icon-plus"></i>
+                    <i><img class="sidebarleft__icons" src="img/icons/arrow-right.svg" alt="icon-arrow"></i>
+                </article>
+                
+                <article class="sidebarleft__art-3">
+                    <a class="sidebarleft__art-3-link" href="#">Playlist</a>
+                    <a class="sidebarleft__art-3-link" href="#">Artistas</a>
+                    <a class="sidebarleft__art-3-link" href="#">Álbumes</a>
+                </article>
+            </section>
+
+            <section class="sidebarleft__library">
+                <div class="sidebarleft__container-search">
+                    <article>
+                        <i class="sidebarleft__container-search-icon-box-link-1"><img class="sidebarleft__container-search-icon" src="img/icons/search.svg" alt="icon-search"></i>
+                    </article>
+                    <article>
+                        <i class="sidebarleft__container-search-icon-box"><img class="sidebarleft__container-search-icon" src="img/icons/puntos-de-viñeta.svg" alt="icon-viñeta"> <a class="sidebarleft__container-search-icon-box-link" href="#">Recientes</a></i>
+                    </article>
+                </div>
+
+                <article class="sidebarleft__albumns">
+                    <div class="sidebarleft__img-container sidebarleft__albumns-1">
+                        <i class="sidebarleft__boxIcon"><img src="img/icons/play-no-circle.svg" alt="icon-play"></i>        
+                    </div>
+                    <div class="sidebarleft__box-text">
+                        <p class="sidebarleft__box-text-title">Sabrina Carpenter</p>
+                        <P class="sidebarleft__box-text-subtitle">Artista &bull; Spotify</P>
+                    </div>
+                </article>
+
+                <article class="sidebarleft__albumns">
+                    <div class="sidebarleft__img-container sidebarleft__albumns-2">
+                        <i class="sidebarleft__boxIcon"><img src="img/icons/play-no-circle.svg" alt="icon-play"></i>        
+                    </div>
+                    <div class="sidebarleft__box-text">
+                        <p class="sidebarleft__box-text-title">WOS</p>
+                        <P class="sidebarleft__box-text-subtitle">Artista &bull; Spotify</P>
+                    </div>
+                </article>
+
+                <article class="sidebarleft__albumns">
+                    <div class="sidebarleft__img-container sidebarleft__albumns-3">
+                        <i class="sidebarleft__boxIcon"><img src="img/icons/play-no-circle.svg" alt="icon-play"></i>        
+                    </div>
+                    <div class="sidebarleft__box-text">
+                        <p class="sidebarleft__box-text-title">How Sweet</p>
+                        <P class="sidebarleft__box-text-subtitle">Album &bull; NewJeans</P>
+                    </div>
+                </article>
+
+                <article class="sidebarleft__albumns">
+                    <div class="sidebarleft__img-container sidebarleft__albumns-4">
+                        <i class="sidebarleft__boxIcon"><img src="img/icons/play-no-circle.svg" alt="icon-play"></i>        
+                    </div>
+                    <div class="sidebarleft__box-text">
+                        <p class="sidebarleft__box-text-title">This is LOUTA</p>
+                        <P class="sidebarleft__box-text-subtitle">Playlist &bull; Spotify</P>
+                    </div>
+                </article>
+
+                <article class="sidebarleft__albumns">
+                    <div class="sidebarleft__img-container sidebarleft__albumns-5">
+                        <i class="sidebarleft__boxIcon"><img src="img/icons/play-no-circle.svg" alt="icon-play"></i>        
+                    </div>
+                    <div class="sidebarleft__box-text">
+                        <p class="sidebarleft__box-text-title">Tus me gusta</p>
+                        <P class="sidebarleft__box-text-subtitle">Playlist &bull; 41 canciones</P>
+                    </div>
+                </article>
+
+                <article class="sidebarleft__albumns">
+                    <div class="sidebarleft__img-container sidebarleft__albumns-6">
+                        <i class="sidebarleft__boxIcon"><img src="img/icons/play-no-circle.svg" alt="icon-play"></i>        
+                    </div>
+                    <div class="sidebarleft__box-text">
+                        <p class="sidebarleft__box-text-title">This is Dillom</p>
+                        <P class="sidebarleft__box-text-subtitle">Playlist &bull; Spotify</P>
+                    </div>
+                </article>
+
+                <article class="sidebarleft__albumns">
+                    <div class="sidebarleft__img-container sidebarleft__albumns-7">
+                        <i class="sidebarleft__boxIcon"><img src="img/icons/play-no-circle.svg" alt="icon-play"></i>        
+                    </div>
+                    <div class="sidebarleft__box-text">
+                        <p class="sidebarleft__box-text-title">This is Kevin Kaarl</p>
+                        <P class="sidebarleft__box-text-subtitle">Playlist &bull; Spotify</P>
+                    </div>
+                </article>
+
+                <article class="sidebarleft__albumns">
+                    <div class="sidebarleft__img-container sidebarleft__albumns-8">
+                        <i class="sidebarleft__boxIcon"><img src="img/icons/play-no-circle.svg" alt="icon-play"></i>        
+                    </div>
+                    <div class="sidebarleft__box-text">
+                        <p class="sidebarleft__box-text-title">This is Nskq</p>
+                        <P class="sidebarleft__box-text-subtitle">Playlist &bull; Spotify</P>
+                    </div>
+                </article>
+
+                <article class="sidebarleft__albumns">
+                    <div class="sidebarleft__img-container sidebarleft__albumns-9">
+                        <i class="sidebarleft__boxIcon"><img src="img/icons/play-no-circle.svg" alt="icon-play"></i>        
+                    </div>
+                    <div class="sidebarleft__box-text">
+                        <p class="sidebarleft__box-text-title">Descartable</p>
+                        <P class="sidebarleft__box-text-subtitle">Playlist &bull; WOS</P>
+                    </div>
+                </article>
+
+                <article class="sidebarleft__albumns">
+                    <div class="sidebarleft__img-container sidebarleft__albumns-10">
+                        <i class="sidebarleft__boxIcon"><img src="img/icons/play-no-circle.svg" alt="icon-play"></i>        
+                    </div>
+                    <div class="sidebarleft__box-text">
+                        <p class="sidebarleft__box-text-title">Tres puntos suspensivos</p>
+                        <P class="sidebarleft__box-text-subtitle">Playlist &bull; WOS</P>
+                    </div>
+                </article>
+
+                <article class="sidebarleft__albumns">
+                    <div class="sidebarleft__img-container sidebarleft__albumns-11">
+                        <i class="sidebarleft__boxIcon"><img src="img/icons/play-no-circle.svg" alt="icon-play"></i>        
+                    </div>
+                    <div class="sidebarleft__box-text">
+                        <p class="sidebarleft__box-text-title">NewJeans 1st EP</p>
+                        <P class="sidebarleft__box-text-subtitle">EP &bull; NewJeans</P>
+                    </div>
+                </article>
+            </section>
+        </aside>
+
+        <main class="main">
+            <article class="main__banner">
+                <div class="main__banner-container-info">
+                    <i class="main__banner-icon-box"><img class="main__banner-icon" src="img/icons/verificar.png" alt="icon-verificado"><p class="main__banner-icon-box-text">Artista verificado</p></i>
+                    <h1 class="main__banner-container-info-title">Nsqk</h1>
+                    <p class="main__banner-container-info-subtitle">2,607,587 oyentes mensuales</p>
+                </div>
+            </article>
+
+            <section class="main__controls">
+                <i class="main__icons"><img class="main__icons-play" src="img/icons/play-circle.svg" alt="icon-play"></i>
+                <button class="main__button"><p class="main__button-text">Seguir</p></button>
+                <i class="main__icons main__icons-tp"><img src="img/icons/tres-puntos.svg" alt="icon-tres-puntos"></i>
+            </section>
+
+            <h2 class="main__subtitle">Popular</h2>
+
+            <section class="main__top5">
+                <article class="main__songs">
+                    <div class="main__container-info-top5">
+                        <p class="main__banner-container-info-number main__container-info-top5-number-play">1</p>
+                    <div class="main__container-img main__container-img-1">
+
+                    </div>
+                    <a class="main__container-info-top5-title main__container-info-top5-title-play" href="#">BOBOMENSOTONTO</a>
+                    </div>                    
+                    <p class="main__container-info-top5-views">4,530,361</p>
+
+                    <p class="main__container-info-top5-time">3:01</p>
+                </article>
+
+                <article class="main__songs">
+                    <div class="main__container-info-top5">
+                        <p class="main__banner-container-info-number">2</p>
+                    <div class="main__container-img main__container-img-2">
+
+                    </div>
+                    <a class="main__container-info-top5-title" href="#">MAMI 100PRE SABE</a>
+                    </div>                    
+                    <p class="main__container-info-top5-views">20,720,109</p>
+
+                    <p class="main__container-info-top5-time">2:17</p>
+                </article>
+
+                <article class="main__songs">
+                    <div class="main__container-info-top5">
+                        <p class="main__banner-container-info-number">3</p>
+                    <div class="main__container-img main__container-img-3">
+
+                    </div>
+                    <a class="main__container-info-top5-title" href="#">Tarde o temprano</a>
+                    </div>                    
+                    <p class="main__container-info-top5-views">3,827,552</p>
+
+                    <p class="main__container-info-top5-time">3:22</p>
+                </article>
+
+                <article class="main__songs">
+                    <div class="main__container-info-top5">
+                        <p class="main__banner-container-info-number">4</p>
+                    <div class="main__container-img main__container-img-4">
+
+                    </div>
+                    <a class="main__container-info-top5-title" href="#">MIATA ᕙ(⇀‸↼‶)ᕗ</a>
+                    </div>                    
+                    <p class="main__container-info-top5-views">3,670,335</p>
+
+                    <p class="main__container-info-top5-time">3:00</p>
+                </article>
+
+                <article class="main__songs">
+                    <div class="main__container-info-top5">
+                        <p class="main__banner-container-info-number">5</p>
+                    <div class="main__container-img main__container-img-5">
+
+                    </div>
+                    <a class="main__container-info-top5-title" href="#">Aún te pienso</a>
+                    </div>                    
+                    <p class="main__container-info-top5-views">3,145,753</p>
+
+                    <p class="main__container-info-top5-time">2:40</p>
+                </article>
+
+                <p class="main__text-verMas">Ver más</p>
+            </section>
+
+            <section class="main__discografia">
+                <div class="main__discografia-content-title">
+                    <a class="main__discografia-content-title-bold" href="#">Discografía</a>
+                    <a class="main__discografia-content-title-small" href="#">Mostrar todos</a>
+                </div>
+
+                <div class="main__discografia-buttons">
+                    <a class="main__discografia-buttons-link-active" href="#">Lanzamientos Populares</a>
+                    <a class="main__discografia-buttons-links" href="#">Álbumes</a>
+                    <a class="main__discografia-buttons-links" href="#">Sencillos y EP</a>
+                </div>
+
+                <article class="main__discografia-albums">
+                    <div class="main__discografia-albums-content">
+                        <img class="main__discografia-albums-content-img" src="img/portada-ATP.jpg" alt="albumn-ATP">
+                        <div class="main__discografia-albums-content-text">
+                            <p class="main__discografia-albums-content-text-title">ATP</p>
+                            <p class="main__discografia-albums-content-text-subtitle">Ultimo lanzamiento &bull; Álbum </p>
+                        </div>
+                    </div>
+                    
+                    <div class="main__discografia-albums-content">
+                        <img class="main__discografia-albums-content-img" src="img/portada-ATP.jpg" alt="albumn-ATP">
+                        <div class="main__discografia-albums-content-text">
+                            <p class="main__discografia-albums-content-text-title">MISA</p>
+                            <p class="main__discografia-albums-content-text-subtitle">Ultimo lanzamiento &bull; Álbum </p>
+                        </div>
+                    </div>
+
+                    <div class="main__discografia-albums-content">
+                        <img class="main__discografia-albums-content-img" src="img/sisifo.jpg" alt="sencillo-sisifo">
+                        <div class="main__discografia-albums-content-text">
+                            <p class="main__discografia-albums-content-text-title">SÍSIFO</p>
+                            <p class="main__discografia-albums-content-text-subtitle">Ultimo lanzamiento &bull; Álbum </p>
+                        </div>
+                    </div>
+
+                    <div class="main__discografia-albums-content">
+                        <img class="main__discografia-albums-content-img" src="img/roy-env.jpeg" alt="albumn-roy">
+                        <div class="main__discografia-albums-content-text">
+                            <p class="main__discografia-albums-content-text-title">ROY</p>
+                            <p class="main__discografia-albums-content-text-subtitle">Ultimo lanzamiento &bull; Álbum </p>
+                        </div>
+                    </div>
+
+                    
+                </article>
+            </section>
+
+            <section class="main__discografia main__discografia-2">
+                <div class="main__discografia-content-title">
+                    <a class="main__discografia-content-title-bold" href="#">Con NSQK</a>
+                    <a class="main__discografia-content-title-small" href="#">Mostrar todo</a>
+                </div>
+
+                <article class="main__discografia-albums">
+                    <div class="main__discografia-albums-content">
+                        <img class="main__discografia-albums-content-img" src="img/NSKQ.JPG" alt="albumn-this-is-nsqk">
+                        <div class="main__discografia-albums-content-text">
+                            <p class="main__discografia-albums-content-text-title">This is Nsqk</p>
+                            <p class="main__discografia-albums-content-text-subtitle">This is Nsqk. Los temas esenciales &bull; Álbum </p>
+                        </div>
+                    </div>
+                    
+                    <div class="main__discografia-albums-content">
+                        <img class="main__discografia-albums-content-img" src="img/radio-nsqk.jpeg" alt="albumn-radio">
+                        <div class="main__discografia-albums-content-text">
+                            <p class="main__discografia-albums-content-text-title">Radio de Nsqk</p>
+                            <p class="main__discografia-albums-content-text-subtitle">Con Méne, Latin Mafia, Riosse y más </p>
+                        </div>
+                    </div>
+
+                    <div class="main__discografia-albums-content">
+                        <img class="main__discografia-albums-content-img" src="img/this is wos.jpeg" alt="albumn-this-is-wos">
+                        <div class="main__discografia-albums-content-text">
+                            <p class="main__discografia-albums-content-text-title">This is WOS</p>
+                            <p class="main__discografia-albums-content-text-subtitle">Recorre un viaje por el oscuro éxtasis de... </p>
+                        </div>
+                    </div>
+
+                    <div class="main__discografia-albums-content">
+                        <img class="main__discografia-albums-content-img" src="img/DILLOM.JPG" alt="albumn-dillom">
+                        <div class="main__discografia-albums-content-text">
+                            <p class="main__discografia-albums-content-text-title">This is Dillom</p>
+                            <p class="main__discografia-albums-content-text-subtitle">This is Dillom. Los temas esenciales,... </p>
+                        </div>
+                    </div>
+
+                    
+                </article>
+            </section>
+
+            <h2 class="main__subtitle">Acerca de</h2>
+
+            <section class="main__container-about">
+                <article class="main__container-about-art">
+                    <p class="main__container-about-art-title">2,595,312 oyentes mensuales</p>
+                    <p class="main__container-about-art-subtitle">se pronuncia nesquik</p>
+                </article>
+            </section>
+
+            <section class="main__footer">
+                <div class="main__footer-container">
+                    <p class="main__footer-container-title">Compañia</p>
+                    <a class="main__footer-container-links" href="#">Acerca de</a>
+                    <a class="main__footer-container-links" href="#">Empleo</a>
+                    <a class="main__footer-container-links" href="#">For the record</a>
+                </div>
+
+                <div class="main__footer-container">
+                    <p class="main__footer-container-title">Comunidades</p>
+                    <a class="main__footer-container-links" href="#">Para artistas</a>
+                    <a class="main__footer-container-links" href="#">Desarrolladores</a>
+                    <a class="main__footer-container-links" href="#">Publicidad</a>
+                    <a class="main__footer-container-links" href="#">Inversionistas</a>
+                    <a class="main__footer-container-links" href="#">Proveedores</a>
+                </div>
+
+                <div class="main__footer-container">
+                    <p class="main__footer-container-title">Enlaces útiles</p>
+                    <a class="main__footer-container-links" href="#">Ayuda</a>
+                    <a class="main__footer-container-links" href="#">App móvil gratis</a>
+                </div>
+
+                <div class="main__footer-container">
+                    <p class="main__footer-container-title">Planes de <br> spotify</p>
+                    <a class="main__footer-container-links" href="#">Premium Individual</a>
+                    <a class="main__footer-container-links" href="#">Premium Duo</a>
+                    <a class="main__footer-container-links" href="#">Premium Familiar</a>
+                    <a class="main__footer-container-links" href="#">Premium para estudiantes</a>
+                    <a class="main__footer-container-links" href="#">Versión gratuita</a>
+                    
+                </div>
+                
+                <div class="main__footer-container-icons">
+                    <a class="main__footer-container-icons-box" href="#"><img class="main__footer-container-icons-box-img" src="img/icons/instagram.svg" alt="icons-instagram"></a>
+                    <a class="main__footer-container-icons-box" href="#"><img class="main__footer-container-icons-box-img" src="img/icons/twitter.svg" alt="icons-twitter"></a>
+                    <a class="main__footer-container-icons-box" href="#"><img class="main__footer-container-icons-box-img" src="img/icons/facebook.svg" alt="icons-facebook"></a>
+                </div>
+            </section>
+
+            <hr class="main__hr">
+            <section class="main__footer-end">
+                <article class="main__footer-end-links">
+                    <a class="main__footer-end-link" href="#">Legal</a>
+                    <a class="main__footer-end-link" href="#">Seguridad y Centro de Privacidad</a>
+                    <a class="main__footer-end-link" href="#">Política de Privacidad</a>
+                    <a class="main__footer-end-link" href="#">Cookies</a>
+                </article>
+                <p class="main__footer-end-text">&copy; 2024 Spotify AB</p>
+
+            </section>
+            
+        </main>
+
+        <aside class="asideright">
+            <section class="asideright__section">
+                <article class="asideright__art">
+                    <a class="asideright__art-link" href="#">Nsqk</a>
+                </article>
+                <article class="asideright__art-2">
+                    <i class="asideright__art-2-box"><img class="asideright__art-2-box-icon" src="img/icons/tres-puntos.svg" alt="icon-tres-puntos"></i>
+                    <i class="asideright__art-2-box"><img class="asideright__art-2-box-icon" src="img/icons/x.svg" alt="icon-quitar"></i>
+                </article>
+            </section>
+
+            <section class="asideright__song">
+                <article class="asideright__song-img">
+                    <img class="asideright__song-img-borderR" src="img/portada-ATP.jpg" alt="portada-ATP">
+                </article>
+
+                <article class="asideright__song-text">
+                    <a class="asideright__song-text-title" href="#">Bobomensotonto</a>
+                    <i class="asideright__song-text-boxIcon"><img class="asideright__song-text-boxIcon-img" src="img/icons/plus-circle.svg" alt="icons-agregar"></i>
+                </article>
+                
+                <articl class="asideright__song-text-artista">
+                    <a class="asideright__song-text-artista-link" href="#">Nsqk</a> 
+                    <p class="asideright__song-text-artista-coma">,</p>
+                    <a class="asideright__song-text-artista-link" href="#">Easykid</a>
+                </article>
+            </section>
+
+            <section class="asideright__about">
+                <article class="asideright__about-container-img">
+                    <p class="asideright__about-container-img-text">Acerca del artista</p>
+                </article>
+
+                <article class="asideright__about-container-info">
+                    <div class="asideright__about-container-info-text">
+                        <a class="asideright__about-container-info-text-name" href="#">Nsqk</a>
+                        <p class="asideright__about-container-img-text-numbers">2,583,485 oyentes <br> mensuales</p>
+                        <p class="asideright__about-container-img-text-sub">se pronuncia nesquik</p>
+                    </div>
+
+                    <div>
+                        <button class="asideright__about-buttom"><p class="asideright__about-buttom-text">Seguir</p></button>
+                    </div>
+                </article>
+            </section>
+
+            <section class="asideright__creditos">
+                <article class="asideright__creditos-info">
+                    <div class="asideright__creditos-info-text">
+                        <p class="asideright__creditos-info-text-title">Créditos</p>
+                        <a class="asideright__creditos-info-text-link" href="#">Mostrar todo</a>
+                    </div>
+
+                    <div class="asideright__creditos-info-text">
+                        <div class="asideright__creditos-info-text-links">
+                            <a class="asideright__creditos-info-text-links-a" href="#">Nsqk</a> <br>
+                            <p class="asideright__creditos-info-text-links-p">Artista Principal, Productor</p>
+                        </div>
+                        <div>
+                            <button class="asideright__about-buttom"><p class="asideright__about-buttom-text">Seguir</p></button>
+                        </div>
+                    </div>
+
+                    <div class="asideright__creditos-info-text">
+                        <div class="asideright__creditos-info-text-links">
+                            <a class="asideright__creditos-info-text-links-a" href="#">Easykid</a> <br>
+                            <p class="asideright__creditos-info-text-links-p">Artista Principal</p>
+                        </div>
+                        <div>
+                            <button class="asideright__about-buttom"><p class="asideright__about-buttom-text">Seguir</p></button>
+                        </div>
+                    </div>
+
+                    <div class="asideright__creditos-info-text">
+                        <div class="asideright__creditos-info-text-links">
+                            <p class="asideright__creditos-info-text-links-a-2">Rodrigo Torres De la Garza</p> <br>
+                            <p class="asideright__creditos-info-text-links-p">Composición</p>
+                        </div>
+                    </div>
+
+                </article>
+            </section>
+        </aside>
+
+        <footer class="footerPlay">
+            <section class="footerPlay__container-song">
+                <div class="footerPlay__container-song-img">
+                    <i class="footerPlay__container-song-img-icon"><img class="footerPlay__container-song-img-icon-transform" src="img/icons/chevron-down.svg" alt="icon-quitar-seccion"></i>
+                </div>
+                <div class="footerPlay__container-song-info">
+                    <a class="footerPlay__container-song-info-link-principal" href="#">Bobomensotonto</a> <br>
+                    <a class="footerPlay__container-song-info-links" href="#">Nsqk</a>
+                    <a class="footerPlay__container-song-info-links" href="#">EasyKid</a>
+                </div>
+                <div>
+                    <i><img class="footerPlay__container-song-icon" src="img/icons/plus-circle.svg" alt="icon-agregar"></i>
+                </div>
+            </section>
+
+            <section class="footerPlay__reproductor">
+                <div class="footerPlay__reproductor-icons">
+                    <i class="footerPlay__reproductor-icons-size"><img src="img/icons/Shuffle.svg" alt="icon-aleatorio"></i>
+                    <i class="footerPlay__reproductor-icons-size"><img src="img/icons/Previous.svg" alt="icon-previus"></i>
+                    <i class="footerPlay__reproductor-icons-size-play"><img src="img/icons/play-circle-white.svg" alt="icon-play"></i>
+                    <i class="footerPlay__reproductor-icons-size"><img src="img/icons/Next.svg" alt="icon-next"></i>
+                    <i class="footerPlay__reproductor-icons-size"><img src="img/icons/Repeat.svg" alt="icon-repeat"></i>
+                </div>
+                
+                <div class="footerPlay__reproductor-barra-progreso">
+                    <span class="footerPlay__reproductor-barra-progreso-tiempo">0:00</span>
+                    <input class="footerPlay__reproductor-barra-progreso-input" type="range" id="progreso" value="0" min="0" max="100">
+                    <span class="footerPlay__reproductor-barra-progreso-tiempo">3:30</span>
+                </div>
+            </section>
+
+            <section class="footerPlay__icons-flex">
+                    <i class="footerPlay__icons-flex-wt2"><img src="img/icons/button-vista.svg" alt="icon-vista"></i>
+                    <i class="footerPlay__icons-flex-wt2"><img src="img/icons/Lyrics.svg" alt="icon-lyric"></i>
+                    <i class="footerPlay__icons-flex-wt2"><img src="img/icons/fila-reproduccion.svg" alt="icon-fila"></i>
+                    <i class="footerPlay__icons-flex-wt2"><img src="img/icons/speaker.svg" alt="icon-speaker"></i>
+                    <i class="footerPlay__icons-flex-wt2"><img src="img/icons/Volume.svg" alt="icon-volume"></i>
+                    <input class="footerPlay__icons-flex-input" type="range" id="progreso" value="0" min="0" max="100">
+                    <i class="footerPlay__icons-flex-wt2"><img src="img/icons/picture-in.svg" alt="icon-picture-in-picture"></i>
+                    <i class="footerPlay__icons-flex-wt2"><img src="img/icons/Full-screen.svg" alt="icon-full-screen"></i>
+            </section>
+        </footer>
+    </section>
+</body>
+</html>
